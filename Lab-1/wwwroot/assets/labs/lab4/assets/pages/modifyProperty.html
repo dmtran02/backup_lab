@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/modifyProperty.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/labs/lab4/assets/css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/labs/lab4/assets/css/lab4.css" />
+    <script type="text/javascript" src="../js/test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        
+    </script>
+    <title>Adam's Realtor Site - Modify Property</title>
+</head>
+<body onload="prepareModification()">
+    <h1>Adam's Realtor Site</h1>
+    <div id="nav-container">
+        <a href="/assets/labs/lab4/index.html">Home</a>
+        <a class="active" href="/assets/labs/lab4/assets/pages/modifyProperty.html">Modify Property</a>
+        <a href="/assets/labs/lab4/assets/pages/searchDisplayProperty.html">Search and Display Property</a>
+    </div>
+    <br />
+    
+    <div class="propertyListView">
+        <div class="row">
+            <div id="column" class="column" style="background-color:#bbb;">
+
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <div id="modifyContainer" class="modifyContainer">
+        Key: <input type="text" name="houseIdentifier" class="houseIdentifier" id="houseIdentifier" disabled="disabled" />
+        <br />
+        <br />
+        <select id="houseList">
+            <option value="Single Family Home">Single Family Home</option>
+            <option value="Town House">Town House</option>
+            <option value="Condominium">Condominium</option>
+            <option value="Rental">Rental</option>
+        </select>
+        <br />
+        <br />
+        Address: <input type="text" name="address" class="address" id="address" />
+        <br />
+        <br />
+        Description: <input type="text" name="description" class="description" id="description" />
+        <br />
+        <br />
+        Price: $<input type="text" name="price" class="price" id="price" />
+        <br />
+        <br />
+        Bedroom (BR): <input type="text" name="bedroom" class="bedroom" id="bedroom" />
+        <br />
+        <br />
+        Bathroom (BTH): <input type="text" name="bathroom" class="bathroom" id="bathroom" />
+        <br />
+        <br />
+        Square Feet: <input type="text" name="square-feet" class="squareFeet" id="squareFeet" />
+        <br />
+        <br />
+        Year Built: <input type="text" name="year-built" class="yearBuilt" id="yearBuilt" />
+        <br />
+        <br />
+        Image URL: <input type="text" name="image-url" class="imageURL" id="imageURL" />
+        <br />
+        <br />
+        <button class="confirmModifyButton" type="button" onclick="confirmModifyProperty()">Confirm</button>
+    </div>
+
+    </body>
+    </html>

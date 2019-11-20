@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="assets/js/test.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/labs/lab4/assets/css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/labs/lab4/assets/css/lab4.css" />
+    <title>Adam's Realtor Site</title>
+</head>
+<body>
+    <h1>Adam's Realtor Site</h1>
+    <div id="nav-container">
+        <a class="active" href="/assets/labs/lab4/index.html">Home</a>
+        <a href="/assets/labs/lab4/assets/pages/modifyProperty.html">Modify Property</a>
+        <a href="/assets/labs/lab4/assets/pages/searchDisplayProperty.html">Search and Display Property</a>
+    </div>
+    <br />
+
+    <div class="formEntry">
+        <label>Select a Category: </label>
+        <select id="houseList">
+            <option value="Single Family Home">Single Family Home</option>
+            <option value="Town House">Town House</option>
+            <option value="Condominium">Condominium</option>
+            <option value="Rental">Rental</option>
+        </select>
+        <br />
+        <br />
+
+        Address: <input type="text" name="address" id="address" />
+        <br />
+        <br />
+        Description: <input type="text" name="description" id="description" />
+        <br />
+        <br />
+        Price $: <input type="text" name="price" id="price" />
+        <br />
+        <br />
+        No. Bedroom (BR): <input type="text" name="bedroom" id="bedroom" />
+        <br />
+        <br />
+        No. Bathroom (BTH): <input type="text" name="bathroom" id="bathroom" />
+        <br />
+        <br />
+        Sq Feet: <input type="text" name="square-feet" id="square-feet" />
+        <br />
+        <br />
+        Year Built: <input type="text" name="year-built" id="year-built" />
+        <br />
+        <br />
+        Image URL: <input type="text" name="image-url" id="image-url" />
+        <br />
+        <br />
+        <p id="test"></p>
+        <button type="submit" onclick="addHouse();">Add</button>
+        <button type="reset" onclick="clearFields();">Clear</button>
+    </div>
+
+</body>
+</html>

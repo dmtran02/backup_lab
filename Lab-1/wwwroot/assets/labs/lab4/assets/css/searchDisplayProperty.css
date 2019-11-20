@@ -1,0 +1,10 @@
+﻿#searchBar {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+#searchSubmitButton:hover {
+    background: #ccc;
+}
